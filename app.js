@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if(cartasEscolhidas[0] === cartasEscolhidas[1]){
             setTimeout(function(){
-                alert('SHOW!');
+                alert('Vocẽ fez um par!');
                 cartas[clickCartaUm].setAttribute('src','images/branco.png');
                 cartas[clickCartaDois].setAttribute('src','images/branco.png');
                 cartas[clickCartaUm].classList.add('desabilitada');

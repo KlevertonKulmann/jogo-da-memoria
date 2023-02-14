@@ -21,17 +21,24 @@
     width: var(--imgWidth);
     transition: all .3s;
 }
-.grid img:hover{
-    transform: translateY(-10px)rotateY(0deg);
-    box-shadow: 0 5px 10px #000000aa;
-}
 .grid img.selecionada{
-    transform: translateY(-10px) rotateY(180deg);
-    box-shadow: 0 5px 10px #000000aa;
+    transform: rotateY(180deg) scale(1);
 }
 .grid img.selecionada.desabilitada{
-    opacity: 0;
-    transform: translateY(-10px) rotateY(180deg)scale(0);
+    animation-name: sumir;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes sumir {
+    from{
+        transform: rotateY(180deg) scale(.97);
+    }
+    30%{
+        transform: rotateY(180deg) scale(1.1);
+    }
+    to{
+        transform: rotateY(180deg) scale(0);
+    }
 }
 @media screen and (max-width:1100px) {
     :root {

@@ -106,16 +106,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if(cartasEscolhidas[0] === cartasEscolhidas[1]){
             setTimeout(function(){
-                alert('Vocẽ fez um par!');
-                cartas[clickCartaUm].setAttribute('src','images/branco.png');
-                cartas[clickCartaDois].setAttribute('src','images/branco.png');
+                //alert('Vocẽ fez um par!');
                 cartas[clickCartaUm].classList.add('desabilitada');
                 cartas[clickCartaDois].classList.add('desabilitada');
             },500);
             paresFeitos.push(cartasEscolhidas);
         }else{
             setTimeout(function(){
-                alert('Não foi dessa vez tenta de novo');
+                //alert('Não foi dessa vez tenta de novo');
                 cartas[clickCartaUm].setAttribute('src','images/verso.png');
                 cartas[clickCartaDois].setAttribute('src','images/verso.png');
                 cartas[clickCartaUm].classList.remove('selecionada');
